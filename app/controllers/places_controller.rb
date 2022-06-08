@@ -14,6 +14,7 @@ class PlacesController < ApplicationController
   end
 
   def create
+
     @place = Place.new
     @place["name"] = params["place"]["name"]
     @place.save
